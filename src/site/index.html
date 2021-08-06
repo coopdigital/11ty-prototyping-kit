@@ -17,7 +17,7 @@ layout: layouts/base.njk
                 <li><a href="#patterns">Patterns</a></li>
             </ul>
             <p>You can use these in prototypes by opening the _includes folder, navigating to the code snippet then copying and pasting it.</p>
-            <p><a href="https://pioneer-design-system.herokuapp.com">Go to the Expereince Library</a> to find out how to apply the foundations, elements, components and patterns to your designs.</p>
+            <p><a href="https://pioneer-design-system.herokuapp.com">Go to the Experience Library</a> to find out how to apply the foundations, elements, components and patterns to your designs.</p>
         </div>
     </div>
     <div class="coop-l-grid coop-u-margin-b-64">
@@ -100,13 +100,60 @@ layout: layouts/base.njk
         </div>
     </div>
     <div class="coop-l-grid coop-u-margin-b-64">
-        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-4">
+        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-12">
             <h2 id="components">Components</h2>
             <div class="coop-u-margin-b-32">
-                <h3>Editorial card</h3>
-                {% include "components/editorial-card.html" %}
+                <h3>Alert notification</h3>
+                {% include "components/alert-notification.html" %}
             </div>
-            <p>More coming soon&hellip;</p>
+            <div class="coop-u-margin-b-32">
+                <h3>Error notification</h3>
+                {% include "components/error-notification.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Success notification</h3>
+                {% include "components/success-notification.html" %}
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-4">
+                    <div class="coop-u-margin-b-32">
+                        <h3>Editorial card</h3>
+                        {% include "components/editorial-card.html" %}
+                    </div>
+                </div>   
+            </div>
+            <div class="coop-l-grid coop-u-margin-b-64">
+                <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-10">
+                    <div class="coop-u-margin-b-32">
+                        <h3>Editorial card horizontal</h3>
+                        {% include "components/editorial-card-horizontal.html" %}
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-4">              
+                    <h3>Feature card</h3>
+                    {% include "components/feature-card.html" %}
+                </div>
+            </div>
+            <div class="coop-l-grid coop-u-margin-b-64">
+                <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-8">
+                    <div class="coop-u-margin-b-32">
+                        <h3>Feature card horizontal</h3>
+                        {% include "components/feature-card-horizontal.html" %}
+                    </div>
+                </div>
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Hero banner</h3>
+                {% include "components/hero-banner.html" %} 
+            </div>  
+            <div class="coop-l-grid coop-u-margin-b-64">
+                <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-4"> 
+                    <h3>Signpost navigation</h3>
+                    {% include "components/signpost.html" %} 
+                </div>  
+            </div> 
         </div>
     </div>
     <div class="coop-l-grid coop-u-margin-b-64">
