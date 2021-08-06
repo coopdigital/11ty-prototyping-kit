@@ -17,11 +17,11 @@ Included:
 
 ## Instructions
 
-## Prerequisites
+### Prerequisites
 
 - [Node and NPM](https://nodejs.org/)
 
-## Running locally
+### Running locally
 
 ```bash
 # install the dependencies
@@ -31,11 +31,11 @@ npm install
 npm start
 ```
 
-## Deploying to Heroku
+### Deploying to Heroku
 
 If you want to publish your prototype to Heroku, a few more steps are necessary:
 
-## 1. Create the prototype repository
+#### 1. Create the prototype repository
 
 Create a new repository for your prototype on Github (make sure the new repository is set to _Private_ if necessary).
 
@@ -48,16 +48,16 @@ git remote add origin git@github.com:coopdigital/your-repository-name.git
 git push -u origin master
 ```
 
-## 2. Create the prototype app on Heroku
+#### 2. Create the prototype app on Heroku
 The next step is to create a new app within the Co-op's enterprise Heroku account. 
 
-## 3. Configure buildpacks
+#### 3. Configure buildpacks
 Once you have your app, in the Settings tab, add the _NodeJS_ the and _static_  buildpacks:
 - `heroku/nodejs`
 - `https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku-community/static.tgz`
 
 
-## 4. Deploy your website
+#### 4. Deploy your website
 In the deploy tab:
 - choose 'Connect to Github' as the deployment method
 - search for and connect to the repository you have created
