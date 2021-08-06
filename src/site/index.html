@@ -12,6 +12,7 @@ layout: layouts/base.njk
             <ul>
                 <li><a href="#foundations">Foundations</a></li>
                 <li><a href="#elements">Elements</a></li>
+                <li><a href="#layout">Layout</a></li>
                 <li><a href="#components">Components</a></li>
                 <li><a href="#patterns">Patterns</a></li>
             </ul>
@@ -72,6 +73,29 @@ layout: layouts/base.njk
             <div class="coop-u-margin-b-64">
                 <h3>Textareas</h3>
                 {% include "elements/forms/textareas.html" %}
+            </div>
+        </div>
+    </div>
+    <div class="coop-l-grid coop-u-margin-b-64">
+        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-12">
+            <h2 id="layout">Layout</h2>
+            <div class="coop-u-margin-b-64">
+                <div class="coop-u-margin-b-32">
+                    <h3>Grid</h3>
+                    {% include "layout/grid.html" %}
+                </div>
+                <div class="coop-u-margin-b-32">
+                    <h3>Centring</h3>
+                    {% include "layout/centring.html" %}
+                </div>
+                <div class="coop-u-margin-b-32">
+                    <h3>Offset</h3>
+                    {% include "layout/offset.html" %}
+                </div>
+                <div class="coop-u-margin-b-32">
+                    <h3>Reverse order</h3>
+                    {% include "layout/reverse-order.html" %}
+                </div>
             </div>
         </div>
     </div>
