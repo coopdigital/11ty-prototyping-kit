@@ -1,0 +1,18 @@
+
+/* Foundations */ 
+@import "normalize.css";  
+@import "@coopdigital/foundations-vars";
+@import "@coopdigital/foundations-global";
+@import "@coopdigital/foundations-typography";
+@import "@coopdigital/foundations-grid";
+@import "@coopdigital/foundations-colors"; 
+@import "@coopdigital/foundations-buttons";
+@import "@coopdigital/foundations-forms";
+@import "@coopdigital/foundations-tables";
+
+@import "_prototype-styles.pcss";
+
+@import "@coopdigital/foundations-layout";
+
+
+  
