@@ -6,6 +6,8 @@ A project scaffold that can be used for prototypes that can be deployed to Herok
 
 This is a WIP project based on the [Eleventyone starter created by Phil Hawksworth](https://github.com/philhawksworth/eleventyone).
 
+[Eleventy](https://11ty.io) is very similar to jekyll the static site generator used in the old prototyping kit - however we're hoping this is far simpler to set up and use.
+
 Included:
 
 - [Eleventy](https://11ty.io) with a skeleton site
