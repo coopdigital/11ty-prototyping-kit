@@ -17,8 +17,6 @@ Included:
 
 ## Instructions
 
-
-
 ## Prerequisites
 
 - [Node and NPM](https://nodejs.org/)
@@ -37,7 +35,7 @@ npm start
 
 If you want to publish your prototype to Heroku, a few more steps are necessary:
 
-### 1. Create the prototype repository
+## 1. Create the prototype repository
 
 Create a new repository for your prototype on Github (make sure the new repository is set to _Private_ if necessary).
 
@@ -50,20 +48,21 @@ git remote add origin git@github.com:coopdigital/your-repository-name.git
 git push -u origin master
 ```
 
-### 2. Create the prototype app on Heroku
+## 2. Create the prototype app on Heroku
+The next step is to create a new app within the Co-op's enterprise Heroku account. 
 
-The next step is to create a new app within the Co-op's enterprise Heroku account. Once this has been done, you'll need to configure a couple of things:
-
-
-### Configure buildpacks:
-Still in the Settings tab, make sure _NodeJS_ the and _static_  buildpacks have been added to the app:
+## 3. Configure buildpacks
+Once you have your app, in the Settings tab, add the _NodeJS_ the and _static_  buildpacks:
 - `heroku/nodejs`
 - `https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku-community/static.tgz`
 
 
-#### Configure automated deployment:
-- In the Deploy tab, choose 'Connect to Github' as a deployment method
-- Search for and connect to the repository you have created
-- Enable Automatic Deploys for this app if needed
+## 4. Deploy your website
+In the deploy tab:
+- choose 'Connect to Github' as the deployment method
+- search for and connect to the repository you have created
+- enable 'Automatic Deploys for this app' or use the deploy from branch option to deploy maunally from the main branch
+
+You will then see your website at [website-name].herokuapp.com
 
 You can test that your app is building and deploying correctly by running a manual deployment from the Deploy tab. If you have enabled automatic deploys, the app will automatically rebuild and deploy when changes are pushed to the master branch.
