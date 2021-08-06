@@ -4,6 +4,9 @@
   "description": "A project bootstrap for Eleventy sites. With pipelines for PostCSS, JavaScript, and serverless functions",
   "author": "Phil Hawksworth",
   "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "start": "npm run dev",
     "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
