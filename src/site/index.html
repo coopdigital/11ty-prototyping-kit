@@ -5,7 +5,7 @@ layout: layouts/base.njk
 ---
 <div class="coop-l-container">
     <div class="coop-l-grid coop-u-margin-b-64">
-        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-6">
+        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-7">
             <h1>{{ title }}</h1>
             {%- if subtitle %}<p class="coop-t-lead-p">{{ subtitle | safe }}</p>{% endif %}
             <p>On this page are examples of the:</p>
@@ -16,6 +16,7 @@ layout: layouts/base.njk
                 <li><a href="#patterns">Patterns</a></li>
             </ul>
             <p>You can use these in prototypes by opening the _includes folder, navigating to the code snippet then copying and pasting it.</p>
+            <p><a href="https://pioneer-design-system.herokuapp.com">Go to the Expereince Library</a> to find out how to use the foundations, elements, components and patterns.</p>
         </div>
     </div>
     <div class="coop-l-grid coop-u-margin-b-64">
@@ -27,8 +28,51 @@ layout: layouts/base.njk
     <div class="coop-l-grid coop-u-margin-b-64">
         <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-12">
             <h2 id="elements">Elements</h2>
-            <h3>Logo</h3>
-            {% include "elements/logo/logo.html" %}
+            <div class="coop-u-margin-b-64">
+                <h3>Buttons</h3>
+                {% include "elements/buttons/buttons.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Co-op Logo</h3>
+                {% include "elements/logo/logo.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Checkboxes</h3>
+                {% include "elements/forms/checkboxes.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Headings, paragraphs and lists</h3>
+                {% include "elements/typography/scale.html" %}
+                {% include "elements/typography/lists.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Inputs</h3>
+                {% include "elements/forms/inputs.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Links</h3>
+                {% include "elements/links/links.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Quotes</h3>
+                {% include "elements/typography/quotes.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Radio buttons</h3>
+                {% include "elements/forms/radio-buttons.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Select dropdowns</h3>
+                {% include "elements/forms/select-dropdowns.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Tables</h3>
+                {% include "elements/tables/tables.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Textareas</h3>
+                {% include "elements/forms/textareas.html" %}
+            </div>
         </div>
     </div>
     <div class="coop-l-grid coop-u-margin-b-64">
