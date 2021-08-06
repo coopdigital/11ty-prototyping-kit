@@ -1,28 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <title>{{ title }}</title>
   </head>
-  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+  <body>
 
-    <div class="coop-l-container">
-      <div class="coop-l-grid">
-        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-12">
-          {% include "header.njk" %}
-        </div>
-      </div>
-    </div>
-    {{ content | safe }}
-    <div class="coop-l-container">
-      <div class="coop-l-grid">
-        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-12">
-          {% include "footer.njk" %}
-        </div>
-      </div>
-    </div>
+    {% include "header.njk" %}
+
+    <main id="main" class="coop-prototype-main">
+
+      {{ content | safe }}
+
+    </main>
+
+    {% include "footer.njk" %} 
+
     {% set js %}
       {% include "js/core.js" %}
       {% include "js/hello.js" %}
@@ -31,6 +26,3 @@
 
   </body>
 </html>
-
-
-

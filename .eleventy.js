@@ -12,7 +12,7 @@ module.exports = function(config) {
 
   // Add some utility filters
   config.addFilter("squash", require("./src/utils/filters/squash.js") );
-  config.addFilter("dateDisplay", require("./src/utils/filters/date.js") );
+  config.addFilter("dateDisplay", require("./src/utils/filters/date.js") );  
 
 
   // add support for syntax highlighting
@@ -26,7 +26,7 @@ module.exports = function(config) {
     const UglifyJS = require("uglify-js");
     let minified = UglifyJS.minify(code);
       if( minified.error ) {
-          console.log("UglifyJS error: ", minified.error); 
+          console.log("UglifyJS error: ", minified.error);
           return code;
       }
       return minified.code;

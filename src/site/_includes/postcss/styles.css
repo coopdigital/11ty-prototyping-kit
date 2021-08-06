@@ -10,8 +10,27 @@
 @import "@coopdigital/foundations-forms";
 @import "@coopdigital/foundations-tables";
 
+/* Components */
+@import "@coopdigital/component-skipnav";
+@import "@coopdigital/component-card--product";
+@import "@coopdigital/component-notification";
+@import "@coopdigital/component-notification--alert";
+@import "@coopdigital/component-search";
+@import "@coopdigital/component-squircles";
+@import "@coopdigital/component-tags";
+@import "@coopdigital/shared-component--signpost";
+@import "@coopdigital/shared-component--editorialcard";
+@import "@coopdigital/shared-component--featurecard";
+@import "@coopdigital/shared-component--hero";
+@import "@coopdigital/shared-component--membership";
+
+/* Styles for the prototype - remove if not needed */ 
 @import "_prototype-styles.pcss";
 
+/* Add custom styles in this file */ 
+@import "_my-styles.pcss";
+
+/* These classes override styles like margin so this file must be at the end */ 
 @import "@coopdigital/foundations-layout";
 
 
