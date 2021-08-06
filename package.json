@@ -5,7 +5,6 @@
   "author": "Phil Hawksworth",
   "license": "MIT",
   "scripts": {
-    "postinstall": "npm run dev",
     "start": "npm run dev",
     "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
     "build": "cross-env ELEVENTY_ENV=prod eleventy",
