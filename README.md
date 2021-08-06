@@ -19,9 +19,16 @@ Included:
 
 ## Instructions
 
-### Prerequisites
+### Getting started
+To get a copy ready to work with:
+- use the 'code' button on this page and select 'download zip'
+- upack the folder and rename it 
+- move the folder to where you keep websites
 
-- [Node and NPM](https://nodejs.org/)
+### Prerequisites
+You'll need Node.js and NPM installed. When you run the next step these will be installed autoamtically, however on Co-op Macs you may not have permissions to do this. If you get an error log out and log back in as the admin account. You'll then need to go to users and groups in system preferences and just give your main account normal user admin abilities.
+
+[Node and NPM](https://nodejs.org/)
 
 ### Running locally
 
