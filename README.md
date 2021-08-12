@@ -115,7 +115,7 @@ You can see an example form by running the server locally and opening <http://lo
 
 Form data storage is enabled by default using the `sessionStorage` browser API, which means all the data is cleared when the browser window is closed.
 
-If you want to retain the data in the browser between sessions, you need to initiate the storage using the `localStorage` browser API in `src/_js/main.js`:
+If you want to retain the data in the browser between sessions, you need to initiate the storage using the `localStorage` browser API in `/src/site/_includes/js/main.js`:
 
 ```js
 var storeForms = new storeForms('localStorage');
