@@ -109,7 +109,7 @@ You can test that your app is building and deploying correctly by running a manu
 
 The Prototyping Kit includes a simple way of saving data entered in forms, as well as displaying the saved data. Data is stored locally on the computer running the prototype and disappears at the end of the session, when the browser window is closed.
 
-You can see an example form by running the server locally and opening <http://localhost:9000/form.html>.
+You can see an example form by running the server locally and opening <http://localhost:8080/form/>.
 
 ### Setting up form data storage
 
@@ -125,7 +125,7 @@ var storeForms = new storeForms('localStorage');
 
 Data entered in forms is saved automatically. SImply make sure the form fields have a `name` attribute -- this will be used as the key to each piece of data.
 
-An example form can be found in [`src/form.html`](https://github.com/coopdigital/coop-prototyping-kit/blob/master/src/form.html)
+An example form can be found in [`src/site/form.html`](https://github.com/coopdigital/11ty-prototyping-kit/blob/master/src/site/form.html)
 
 ### Displaying saved data
 
@@ -160,6 +160,6 @@ You can also show and hide HTML elements depending on whether the data has a val
 ```
 
 
-Examples of displaying data can be found in [`src/summary.html`](https://github.com/coopdigital/coop-prototyping-kit/blob/master/src/summary.html)
+Examples of displaying data can be found in [`src/site/summary.html`](https://github.com/coopdigital/11ty-prototyping-kit/blob/master/src/site/summary.html)
 
 ---
