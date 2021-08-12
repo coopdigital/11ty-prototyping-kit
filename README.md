@@ -104,3 +104,62 @@ In the deploy tab:
 You will then see your website at [website-name].herokuapp.com
 
 You can test that your app is building and deploying correctly by running a manual deployment from the Deploy tab. If you have enabled automatic deploys, the app will automatically rebuild and deploy when changes are pushed to the master branch.
+
+## Saving and showing form data
+
+The Prototyping Kit includes a simple way of saving data entered in forms, as well as displaying the saved data. Data is stored locally on the computer running the prototype and disappears at the end of the session, when the browser window is closed.
+
+You can see an example form by running the server locally and opening <http://localhost:9000/form.html>.
+
+### Setting up form data storage
+
+Form data storage is enabled by default using the `sessionStorage` browser API, which means all the data is cleared when the browser window is closed.
+
+If you want to retain the data in the browser between sessions, you need to initiate the storage using the `localStorage` browser API in `src/_js/main.js`:
+
+```js
+var storeForms = new storeForms('localStorage');
+```
+
+### Saving data
+
+Data entered in forms is saved automatically. SImply make sure the form fields have a `name` attribute -- this will be used as the key to each piece of data.
+
+An example form can be found in [`src/form.html`](https://github.com/coopdigital/coop-prototyping-kit/blob/master/src/form.html)
+
+### Displaying saved data
+
+To display data, create HTML elements with the `data-name` attribute equal to the key of the data you want to display -- when the page loads, the contents of the element will be replaced by the data, if it exists.
+
+For instance, to display the data entered in an input field called `job`, you would use:
+
+```html
+<p data-name="job"></p>
+```
+
+#### Show/hide depending on data value
+
+You can show and hide HTML elements depending on the value of the data by using the `data-show-if` and `data-hide-if` attributes alongside the `data-name` attribute:
+
+```html
+<!-- shown if job equals 'teacher' -->
+<span data-name="job" data-show-if="teacher">This is visible if 'job' equals 'teacher'</span>
+
+<!-- hidden if job equals 'manager' -->
+<span data-name="job" data-hide-if="manager">This is hidden if 'job' equals 'manager'</span>
+```
+
+You can also show and hide HTML elements depending on whether the data has a value or not. To do so, use the `data-show-if` or `data-hide-if` above with a value of `:empty`:
+
+```html
+<!-- shown if job is empty -->
+<span data-name="job" data-show-if=":empty">This is visible if 'job' is empty.</span>
+
+<!-- hidden if job is empty -->
+<span data-name="job" data-hide-if=":empty">This is hidden if 'job' is empty.</span>
+```
+
+
+Examples of displaying data can be found in [`src/summary.html`](https://github.com/coopdigital/coop-prototyping-kit/blob/master/src/summary.html)
+
+---

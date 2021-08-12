@@ -1,8 +1,8 @@
 {
-  "name": "EleventyOne",
-  "version": "3.0.0",
-  "description": "A project bootstrap for Eleventy sites. With pipelines for PostCSS, JavaScript, and serverless functions",
-  "author": "Phil Hawksworth",
+  "name": "Co-op prototyping kit",
+  "version": "1.0.0",
+  "description": "A project bootstrap for prototypes to allow Co-op colleagues to research with users.",
+  "author": "Matt Tyas",
   "license": "MIT",
   "engines": {
     "node": "12.x",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/philhawksworth/eleventyone"
+    "url": "https://github.com/coopdigital/11ty-prototyping-kit"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",

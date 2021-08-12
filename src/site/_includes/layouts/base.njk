@@ -7,22 +7,15 @@
     <title>{{ title }}</title>
   </head>
   <body>
-
     {% include "header.njk" %}
-
     <main id="main" class="coop-prototype-main">
-
       {{ content | safe }}
-
     </main>
-
     {% include "footer.njk" %} 
-
     {% set js %}
-      {% include "js/core.js" %}
-      {% include "js/hello.js" %}
+      {% include "js/forms_storage.js" %}
+      {% include "js/main.js" %}
     {% endset %}
     <script>{{ js | jsmin | safe }}</script>
-
   </body>
 </html>
