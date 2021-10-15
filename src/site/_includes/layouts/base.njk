@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon"
+      type="image/png"
+      href="/images/favicon.ico">
     <title>{{ title }}</title>
   </head>
   <body>
@@ -11,7 +14,7 @@
     <main id="main" class="coop-prototype-main">
       {{ content | safe }}
     </main>
-    {% include "footer.njk" %} 
+    {% include "footer.njk" %}
     {% set js %}
       {% include "js/forms_storage.js" %}
       {% include "js/main.js" %}
